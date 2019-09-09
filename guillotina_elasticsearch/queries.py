@@ -29,12 +29,14 @@ async def build_security_query(container, request=None):
     return {
         'query': {
             'bool': {
-                'filter': {
-                    'bool': {
-                        'should': should_list,
-                        'minimum_should_match': 1
+                'filter': [
+                    {
+                        'bool': {
+                            'should': should_list,
+                            'minimum_should_match': 1
+                        }
                     }
-                }
+                ]
             }
         }
     }
