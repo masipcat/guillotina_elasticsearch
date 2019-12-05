@@ -11,7 +11,6 @@ test_requires = [
     'pytest-asyncio',
     'coverage',
     'pytest-cov',
-    'pytest-aiohttp',
     'pytest-rerunfailures',
     'pytest-docker-fixtures>=1.3.0'
 ]
@@ -41,6 +40,7 @@ setup(
     packages=find_packages(exclude=['ez_setup']),
     install_requires=[
         'guillotina>=4.6.0',
+        'aiohttp<4',
         'mypy_extensions',
         'aioelasticsearch<0.6.0',
         'ujson',

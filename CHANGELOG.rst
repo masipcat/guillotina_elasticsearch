@@ -1,4 +1,4 @@
-3.3.25 (unreleased)
+3.3.25-g6 (unreleased)
 -------------------
 
 - Nothing changed yet.
